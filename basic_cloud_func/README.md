@@ -1,6 +1,6 @@
 # basic_cloud_func
 ## Description
-This app is a template for the essentials needed to create a GCP cloud function using Python. Cloning 
+This app is a template for the essentials needed to create a GCP cloud function using Python. 
 
 The app comes with a built-in testing environment for a cloud function triggered by an HTTP request. 
 
@@ -22,15 +22,16 @@ Invoking the function in the local environment via POST:
 
 via GET:
 
-`curl -XGET localhost:8080/?API_KEY=changme`
+`curl -XGET localhost:<port>/?API_KEY=<key value>`
 
 A successful request yields the result:
 
 `{"messsage": "Success"}`
 
 ## Opportunities for improvement ###
-- Function templates for handling GCP service account handling/authorization
+- Templates for handling GCP service account handling/authorization
 - Templates for interacting with various GCP services
   - Spanner
   - BQ
   - Pubsub
+- Cloud function custom logger
